@@ -30,13 +30,13 @@ public class Game {
 			for (boolean column : row) {
 				// If in column is True
 				if (column) {
-					System.out.print("0" + "\t");
+					System.out.print("\u001B[42m  " + "\u001B[0m"+ "  ");
 					// If false
 				} else {
-					System.out.print("X" + "\t");
+					System.out.print("\u001B[0m  ");
 				}
 			}
-			System.out.println();
+			System.out.println("\u001B[0m  \n");
 		}
 	}
 
